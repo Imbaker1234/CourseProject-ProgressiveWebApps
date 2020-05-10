@@ -12,7 +12,29 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
   <link rel="stylesheet" href="./src/css/app.css">
   <link rel="stylesheet" href="./src/css/feed.css">
+
+<!--  Basic PWA Support -->
   <link rel="manifest" href="./manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PWAGram">
+
+<!--  Apple PWA Support -->
+  <link rel="apple-touch-icon" href="./src/images/icons/apple-icon-57x57.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="./src/images/icons/apple-icon-60x60.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="./src/images/icons/apple-icon-72x72.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="./src/images/icons/apple-icon-114x114.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="./src/images/icons/apple-icon-120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="./src/images/icons/apple-icon-144x144.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="./src/images/icons/apple-icon-152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="./src/images/icons/apple-icon-180x180.png" sizes="180x180">
+
+<!--  Microsoft PWA Support -->
+  <meta name="msapplication-TileImage" content="./src/images/icons/app-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#fff">
+<!--  Most systems will recognize this tag and Chrome will fall back to this value if it has a problem
+      with the Manifest.json file. -->
+  <meta name="theme-color" content="#3f51b5">
 </head>
 <body>
 
@@ -27,7 +49,7 @@
         <!-- Navigation. We hide it in small screens. -->
         <nav class="mdl-navigation mdl-layout--large-screen-only">
           <a class="mdl-navigation__link" href="/">Feed</a>
-          <a class="mdl-navigation__link" href="/help">Help</a>
+          <a class="mdl-navigation__link" href="./help">Help</a>
           <div class="drawer-option">
             <button class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
               Enable Notifications
@@ -40,7 +62,7 @@
       <span class="mdl-layout-title">PWAGram</span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="/">Feed</a>
-        <a class="mdl-navigation__link" href="/help">Help</a>
+        <a class="mdl-navigation__link" href="./help">Help</a>
         <div class="drawer-option">
           <button class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
             Enable Notifications
@@ -73,7 +95,7 @@
           </div>
         </form>
       </div>
-      <img src="/src/images/main-image.jpg"
+      <img src="./src/images/main-image.jpg"
            alt="Explore the City"
            class="main-image">
       <div class="page-content">
@@ -93,8 +115,8 @@
     </main>
   </div>
 </div>
-<script defer src="/src/js/material.min.js"></script>
-<script src="/src/js/app.js"></script>
-<script src="/src/js/feed.js"></script>
+<script defer src="./src/js/material.min.js"></script>
+<script src="./src/js/app.js"></script>
+<script src="./src/js/feed.js"></script>
 </body>
 </html>
